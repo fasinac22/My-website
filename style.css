@@ -1,0 +1,193 @@
+ul:not(.socials){list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: white;
+position: fixed;
+top: 0;
+width: 100%;
+border: black;
+position: sticky;}
+
+
+li{float: right;
+font-size: large;}
+
+li a{display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;}
+
+li a:hover{background-color: black;
+color: white;}
+
+main:not(.gallery){
+background-image: no-repeat;
+background-size: cover;
+background-position: center;
+height: 1000px;}
+
+h1,h2,h3{margin: 0;
+align-items: center;
+padding-left: 300px;}
+
+h1{
+    padding-top: 200px;
+}
+
+#about{margin:0;
+display: block;
+align-items: center;
+padding-left: 700px;
+background-color: none;}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  display: block;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.socials li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+#toggler1:checked{
+    display: block;
+}
+
+label{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label:hover{
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
+    transition: 0.1s ease-out;
+}
+
+.gallery {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    width: 1000px;
+    height: 500px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+    overflow: hidden;
+}
+
+#toggler1:checked ~ .main-image img.img1,
+#toggler2:checked ~ .main-image img.img2,
+#toggler3:checked ~ .main-image img.img3,
+#toggler4:checked ~ .main-image img.img4,
+#toggler5:checked ~ .main-image img.img5,
+#toggler6:checked ~ .main-image img.img6,
+#toggler7:checked ~ .main-image img.img7,
+#toggler8:checked ~ .main-image img.img8,
+#toggler9:checked ~ .main-image img.img9,
+#toggler10:checked ~ .main-image img.img10 {
+    display: block;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.thumbnails label {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.thumbnails img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.thumbnails label:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.about-main {
+    background-image: url("media/about_person.avif");
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+    padding-top: 50px;
+}
+
+.about-text {
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.contact-main {
+    background-image: url("media/contact_person.avif");
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 8%;
+}
+
+.contact-text {
+    float: none;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1000px;
+}
